@@ -102,9 +102,11 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/6.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'fr-fr'
 
-TIME_ZONE = 'UTC'
+DATE_INPUT_FORMATS = ('%d/%m/%Y', '%Y-%m-%d')
+
+TIME_ZONE = 'Europe/Paris'
 
 USE_I18N = True
 
@@ -114,8 +116,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.1/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATICFILES_DIRS = (BASE_DIR /'static/',)
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR /'media/'
 
 # Email
 # https://docs.djangoproject.com/en/6.1/topics/email/#topic-email-configuration
