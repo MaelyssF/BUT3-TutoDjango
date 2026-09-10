@@ -14,7 +14,10 @@ Pour lancer l'application, se positionner dans le dossier `./projet` du réperto
 ### Routes disponibles  
 
 Voici la liste des routes accessibles avec l'url `http://127.0.0.1:8000/<route>/` :  
-- application
+- `application` ou `application/home` pour la page d'accueil  
+- `application/<nom>` ou `application/home/<nom>`, pour la page d'accueil personnalisée  
+- `application/contact` pour la page de contact  
+- `application/about` pour en savoir plus sur l'auteur  
 
 ## Tests  
 
@@ -24,3 +27,7 @@ On peut visualiser un rapport de coverage sous forme de tableau en exécutant la
 ![sortie de la commande de coverage](./images_README/image.png)  
 
 Le dernier rapport de coverage généré peut être visualisé sous forme de fichier HTML en ouvrant dans le navigateur le fichier `./projet/htmlcov/index.html`.  
+
+## État d'avancement  
+
+J'en suis au TDn°1, à la question "Petit challenge" sur la dernière page. J'ai créé les vues d'about, contact, home et je les ai routées, il me manque just à écrire les tests associés pour terminer le TD.
