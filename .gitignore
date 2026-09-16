@@ -1,3 +1,2 @@
 ./venv/
-./projet/projet/__pycache__/*
-./projet/application/__pycache__/*
+__pycache__/*
